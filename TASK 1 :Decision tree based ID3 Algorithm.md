@@ -64,17 +64,10 @@ For illustration, let's consider a dataset related to surfing conditions:
 
 First, we calculate the entropy of the entire dataset.
 
-\[
-H(S) = -p(Yes) \log_2(p(Yes)) - p(No) \log_2(p(No))
-\]
 
-Where:
-- \( p(Yes) = \frac{9}{14} \)
-- \( p(No) = \frac{5}{14} \)
+![idl1](https://github.com/user-attachments/assets/3e08436a-53de-49c1-8cce-3242a9664738)
 
-\[
-H(S) = -\left(\frac{9}{14}\right) \log_2\left(\frac{9}{14}\right) - \left(\frac{5}{14}\right) \log_2\left(\frac{5}{14}\right) = 0.94
-\]
+
 
 #### Step 2: Calculate Entropy for Each Feature
 
@@ -82,9 +75,8 @@ We calculate the entropy for each feature (Outlook, Temperature, Humidity, Wind)
 
 For example, for the feature "Outlook":
 
-\[
-H(\text{Outlook} = \text{Sunny}) = -\left(\frac{2}{5}\right) \log_2\left(\frac{2}{5}\right) - \left(\frac{3}{5}\right) \log_2\left(\frac{3}{5}\right) = 0.971
-\]
+![idle2](https://github.com/user-attachments/assets/114b4c10-c5f7-4a6b-92c0-da092324b7f4)
+
 
 We perform similar calculations for "Rain" and "Overcast."
 
@@ -92,9 +84,8 @@ We perform similar calculations for "Rain" and "Overcast."
 
 Information Gain for a feature:
 
-\[
-\text{Info Gain}(\text{Feature}) = H(S) - \left(\sum \left(\frac{\text{subset size}}{\text{total size}} \times H(\text{subset})\right)\right)
-\]
+![Screenshot (76)](https://github.com/user-attachments/assets/80e52dd1-7bd7-41e1-a6ed-94a5af3ccd32)
+
 
 We calculate this for each feature and select the one with the highest information gain.
 
