@@ -1,4 +1,4 @@
-## Task Report: GAN Implementation Using CIFAR-10 Dataset
+# Task 8: GAN Implementation Using CIFAR-10 Dataset
 
 ### 1. **Introduction**
 In this task, we implemented a Generative Adversarial Network (GAN) to generate synthetic images using the CIFAR-10 dataset. CIFAR-10 is a widely used dataset consisting of 60,000 32x32 color images across 10 different classes. The aim was to train a GAN model to produce realistic images that mimic the CIFAR-10 classes. The GAN architecture consists of two primary models:
